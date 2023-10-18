@@ -3,9 +3,39 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: purple;
+  margin:0;
+  background-color: beige;
   }
 
-h1 {
-  color:red;
+.main_text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+/*The below comes from https://www.w3schools.com/cssref/pr_background-image.php*/
+#main_page {
+    background-image: url("duck_photo.jpg"); /* The image used */
+    background-color: #cccccc;
+    height: 600px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100%; /* Resize the background image to cover the entire container */
+    position: relative;
+    width: 800px;
+}
+
+table {
+  position: fixed;
+  border-collapse: collapse;
+  font-size:large;
+  width: 30%;
+  top:5px;
+}
+
+table, th {
+  border: 1px solid;
 }
